@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Nexus - Game Release Calendar
 
 A frontend-only web application built with React, Vite, React Router v6, TanStack Query, and the RAWG Video Games Database API.
@@ -28,3 +29,7 @@ A frontend-only web application built with React, Vite, React Router v6, TanStac
    \`\`\`bash
    npm run dev
    \`\`\`
+=======
+# Nexus_game_release_calender
+its a game realease calender
+>>>>>>> cb6733e12290653e613442f66dea34092db75a62
