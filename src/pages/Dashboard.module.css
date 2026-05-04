@@ -1,0 +1,56 @@
+.pageTitle {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--neon-green);
+  text-shadow: 0 0 10px rgba(0, 255, 102, 0.4);
+}
+
+.subtitle {
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.chartCard {
+  padding: 1.5rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.fullWidth {
+  grid-column: 1 / -1;
+}
+
+.chartCard h3 {
+  margin-bottom: 1.5rem;
+  color: var(--text-main);
+  font-size: 1.25rem;
+}
+
+.chartWrapper {
+  height: 300px;
+  width: 100%;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
