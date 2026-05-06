@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { useSearchParams, useNavigate, Link } from 'react-router-dom';
+import { useSearchParams, Link } from 'react-router-dom';
 import { ChevronLeft, ChevronRight, Search, Heart, Gamepad2, X } from 'lucide-react';
-import { format, addMonths, subMonths, startOfMonth, endOfMonth, eachDayOfInterval, isSameMonth, isToday, parse, getDay } from 'date-fns';
+import { format, addMonths, subMonths, startOfMonth, endOfMonth, eachDayOfInterval, isToday, parse, getDay } from 'date-fns';
 import { useGames, PLATFORMS } from '../hooks/useGames';
 import { useWishlist } from '../context/WishlistContext';
 import styles from './CalendarView.module.css';
@@ -18,7 +18,6 @@ const useDebounce = (value, delay) => {
 
 const CalendarView = () => {
   const [searchParams, setSearchParams] = useSearchParams();
-  const navigate = useNavigate();
   const { isInWishlist, addToWishlist, removeFromWishlist } = useWishlist();
   
   // State from URL or Defaults

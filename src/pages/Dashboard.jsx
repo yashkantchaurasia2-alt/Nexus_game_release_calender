@@ -5,7 +5,6 @@ import {
 } from 'recharts';
 import api from '../api';
 import { PLATFORMS } from '../hooks/useGames';
-import { addMonths, format, startOfMonth, endOfMonth } from 'date-fns';
 import styles from './Dashboard.module.css';
 
 const COLORS = ['#00f0ff', '#ff003c', '#00ff66', '#f0f0f5', '#a0a0b0', '#ff00ff', '#ffff00'];
