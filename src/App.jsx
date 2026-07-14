@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { WishlistProvider } from './context/WishlistContext';
 import Layout from './components/Layout';
 import CalendarView from './pages/CalendarView';
@@ -30,6 +31,7 @@ function App() {
             </Route>
           </Routes>
         </Router>
+        <SpeedInsights />
       </WishlistProvider>
     </QueryClientProvider>
   );
